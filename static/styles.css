@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: rgb(185, 218, 226);
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  background-color: rgb(134, 226, 198);
+  padding: 1rem 1rem;
+  margin-bottom: 24px;
+}
+.post .post-header {
+  display: flex;
+  flex-direction: column;
+}
+.post .post-title {
+  display: flex;
+  font-weight: 500;
+  font-size: 2rem;
+  flex-grow: 1;
+}
+.post .post-user {
+  display: flex;
+  font-weight: 300;
+  font-size: 12px;
+}
+.post .post-content {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  border: 2px dashed grey;
+  margin-bottom: 1rem;
+}
+.post-content {
+  overflow-wrap: break-word;
+}
+.post-replies > .post {
+  background-color: rgb(235, 215, 215);
+}
+.post div[id^="editor-"] {
+  margin-bottom: 12px;
+}
+.post div[id^="editor-"],
+.post div.ql-toolbar {
+  background-color: white;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  background-color: #c4c4c4;
+}
